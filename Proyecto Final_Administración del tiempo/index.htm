@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración del Tiempo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Administración del Tiempo</h1>
+        <p>Arrastra cada tarea al cuadrante correcto de la Matriz de Eisenhower.</p>
+    </header>
+    <main>
+        <div class="game-container">
+            <div id="quadrants">
+                <div class="quadrant" id="important-urgent"><h3>Importante y Urgente</h3></div>
+                <div class="quadrant" id="important-not-urgent"><h3>Importante, No Urgente</h3></div>
+                <div class="quadrant" id="not-important-urgent"><h3>No Importante, Urgente</h3></div>
+                <div class="quadrant" id="not-important-not-urgent"><h3>No Importante, No Urgente</h3></div>
+            </div>
+        
+            <div id="tasks-container">
+                <div id="task-list">
+                    <div class="task" draggable="true" id="task1">Preparar una presentación para mañana</div>
+                    <div class="task" draggable="true" id="task2">Revisar redes sociales</div>
+                    <div class="task" draggable="true" id="task3">Hacer ejercicio</div>
+                    <div class="task" draggable="true" id="task4">Responder un correo urgente</div>
+                    <div class="task" draggable="true" id="task5">Planificar metas a largo plazo</div>
+                    <div class="task" draggable="true" id="task6">Ver un programa de TV</div>
+                    <div class="task" draggable="true" id="task7">Atender interrupciones constantes por parte de compañeros</div>
+                    <div class="task" draggable="true" id="task8">Terminar un informe antes de una fecha límite</div>
+                    <div class="task" draggable="true" id="task9">Atender una crisis familiar</div>
+                    <div class="task" draggable="true" id="task10">Planear un proyecto estratégico para el próximo trimestre</div>
+                    <div class="task" draggable="true" id="task11">Recoger un paquete en la recepción</div>
+                    <div class="task" draggable="true" id="task12">Jugar videojuegos</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <button id="check-answer" class="btn">Revisar respuestas</button>
+            <button id="reset-game" class="btn">Reiniciar</button>
+            <div id="result"></div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+

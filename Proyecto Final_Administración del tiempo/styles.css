@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    margin: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#quadrants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 50%;
+}
+
+.quadrant {
+    border: 2px solid #6200ea;
+    padding: 20px;
+    background-color: #fff;
+    min-height: 150px;
+    transition: background-color 0.3s;
+}
+
+.quadrant h3 {
+    margin-top: 0;
+}
+
+#tasks-container {
+    width: 30%;
+}
+
+.task {
+    background-color: #e6f0ff;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #6200ea;
+    cursor: grab;
+}
+
+.task:hover {
+    background-color: #bbdefb;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #3700b3;
+}
